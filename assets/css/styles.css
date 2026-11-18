@@ -100,12 +100,13 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.75rem); font-weight: 800; line-height: 1.12
 
 /* Ficha del proyecto */
 .ficha {
-  display: grid; grid-template-columns: repeat(3, auto) 1fr; gap: 1px; margin: 0 0 56px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 0 0 56px;
   border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--line);
 }
 .ficha > div { background: var(--black); padding: 18px 22px; }
 .ficha dt { color: var(--yellow); font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 4px; }
 .ficha dd { margin: 0; color: var(--pale-gray); font-size: .95rem; }
+.ficha-reto { grid-column: 1 / -1; }
 
 /* Inicio: tarjetas de proyectos */
 .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
@@ -322,8 +323,6 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 960px) {
   .posts { grid-template-columns: repeat(2, 1fr); }
   .about { grid-template-columns: 1fr; gap: 40px; }
-  .ficha { grid-template-columns: repeat(3, 1fr); }
-  .ficha-reto { grid-column: 1 / -1; }
 }
 @media (max-width: 760px) {
   .projects { grid-template-columns: 1fr; }
