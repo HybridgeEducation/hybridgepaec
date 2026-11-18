@@ -334,7 +334,7 @@ body.modal-open { overflow: hidden; }
   .post-video .video-cover { width: 100%; }
   .post-video .post-body { padding: 22px 24px 26px; }
   .post-video h3 { font-size: 1.25rem; }
-  .nav a:not(:last-child) { display: none; }
+  .nav a:not(:first-child) { display: none; }
   .hero { padding: 64px 0 80px; }
   .section, .closing { padding: 72px 0; }
   .footer-inner { flex-direction: column; text-align: center; }
