@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=11">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=13">
 </head>
 <body>
   <header class="site-header">
@@ -31,7 +31,7 @@
       <div class="wrap hero-inner">
         <div class="chips">
           <a class="chip chip-dark chip-link" href="../"><span aria-hidden="true">←</span> Proyectos Hybridge Prepa</a>
-          <span class="chip chip-aqua">Próximamente</span>
+          <span class="chip chip-yellow">Otoño 2026</span>
         </div>
         <h1><span class="hl">Cortometrajes</span></h1>
         <p class="lead">Historias escritas, filmadas y editadas por nuestros estudiantes.</p>
@@ -43,8 +43,8 @@
       <div class="wrap">
         <p class="eyebrow">Sobre el proyecto</p>
         <dl class="ficha">
-          <div><dt>Temporada</dt><dd><span class="pending">Por definir</span></dd></div>
-          <div><dt>Formato</dt><dd>Cortometrajes</dd></div>
+          <div><dt>Temporada</dt><dd>Otoño 2026</dd></div>
+          <div><dt>Formato</dt><dd>Cortometrajes de animación y ficción</dd></div>
           <div><dt>Participan</dt><dd>Estudiantes de Hybridge Prepa</dd></div>
           <div class="ficha-reto"><dt>El reto</dt><dd><span class="pending">Aquí irá la consigna que se les dio a los estudiantes.</span></dd></div>
         </dl>
@@ -54,14 +54,77 @@
     <section id="cortos" class="section section-alt">
       <div class="wrap">
         <p class="eyebrow">Cortometrajes</p>
-        <div class="empty-state">
-          <span class="film-play" style="position: relative; display: inline-block;" aria-hidden="true"></span>
-          <h3>Muy pronto</h3>
-          <p>Estamos preparando los cortometrajes de nuestros estudiantes. Vuelve pronto para verlos.</p>
+        <h2>Funciones disponibles</h2>
+        <p class="section-intro">Toca cualquier cortometraje para verlo en grande. Te recomendamos activar el sonido.</p>
+
+        <div class="posts">
+          <article class="post post-video">
+            <button class="video-cover" type="button" style="--ratio: 1.7778" data-video="../assets/cortometrajes/the-last-autumn.mp4" aria-label="Reproducir cortometraje: The Last Autumn">
+              <img src="../assets/cortometrajes/the-last-autumn.webp" alt="" loading="lazy" decoding="async" width="1280" height="720">
+              <span class="play-icon" aria-hidden="true"></span>
+              <span class="video-duration">3:15</span>
+            </button>
+            <div class="post-body">
+              <span class="chip chip-pink">Animación · 3:15</span>
+              <h3>The Last Autumn</h3>
+              <p>Un joven recorre un bosque en pleno otoño mientras el mundo sigue avanzando a su alrededor. Una historia animada sobre el paso del tiempo y lo que dejamos atrás.</p>
+            </div>
+          </article>
+
+          <article class="post">
+            <button class="video-cover" type="button" style="--ratio: 0.5625" data-video="../assets/cortometrajes/numero-3.mp4" aria-label="Reproducir cortometraje: Número 3">
+              <img src="../assets/cortometrajes/numero-3.webp" alt="" loading="lazy" decoding="async" width="576" height="1024">
+              <span class="play-icon" aria-hidden="true"></span>
+              <span class="video-duration">3:10</span>
+            </button>
+            <div class="post-body">
+              <span class="chip chip-blue">Suspenso · 3:10</span>
+              <h3>Número 3</h3>
+              <p>Una noche, pasillos oscuros y una cámara de seguridad que lo registra todo. Un cortometraje de suspenso grabado en formato vertical.</p>
+            </div>
+          </article>
+
+          <article class="post post-video">
+            <button class="video-cover" type="button" style="--ratio: 1.7778" data-video="../assets/cortometrajes/lo-que-el-otono-siembra.mp4" aria-label="Reproducir cortometraje: Lo que el otoño siembra">
+              <img src="../assets/cortometrajes/lo-que-el-otono-siembra.webp" alt="" loading="lazy" decoding="async" width="960" height="540">
+              <span class="play-icon" aria-hidden="true"></span>
+              <span class="video-duration">3:24</span>
+            </button>
+            <div class="post-body">
+              <span class="chip chip-yellow">Animación documental · 3:24</span>
+              <h3>Lo que el otoño siembra</h3>
+              <p>Un recorrido animado, con datos, sobre las niñas y jóvenes que se quedan fuera de la escuela en México y en el mundo, y sobre lo que podemos hacer para abrirles camino.</p>
+            </div>
+          </article>
+
+          <article class="post post-video">
+            <button class="video-cover" type="button" style="--ratio: 1.7778" data-video="../assets/cortometrajes/el-asesino-amigable.mp4" aria-label="Reproducir cortometraje: El asesino amigable">
+              <img src="../assets/cortometrajes/el-asesino-amigable.webp" alt="" loading="lazy" decoding="async" width="1280" height="720">
+              <span class="play-icon" aria-hidden="true"></span>
+              <span class="video-duration">0:27</span>
+            </button>
+            <div class="post-body">
+              <span class="chip chip-aqua">Terror y comedia · 0:27</span>
+              <h3>El asesino amigable</h3>
+              <p>Cuatro amigos entran a una casa abandonada y se encuentran con alguien inesperado… que solo quería compañía.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
   </main>
+
+  <dialog class="post-modal" aria-labelledby="post-modal-title">
+    <div class="post-modal-inner">
+      <div class="carousel carousel-large"></div>
+      <video class="post-modal-video" controls playsinline preload="none" hidden></video>
+      <div class="post-modal-info">
+        <h3 id="post-modal-title" class="post-modal-title"></h3>
+        <p class="post-modal-text"></p>
+      </div>
+    </div>
+    <button class="post-modal-close" type="button" aria-label="Cerrar">×</button>
+  </dialog>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
@@ -70,5 +133,7 @@
       <a href="../">Ver todos los proyectos</a>
     </div>
   </footer>
+
+  <script src="../assets/js/main.js?v=12"></script>
 </body>
 </html>
