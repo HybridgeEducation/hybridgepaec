@@ -10,6 +10,10 @@ https://hybridgeeducation.github.io/hybridgepaec/
 - `assets/js/main.js`: carruseles e imagen ampliada.
 - `assets/carruseles/<publicación>/01.webp, 02.webp, …`: imágenes de cada publicación.
 
+## Ficha de cada proyecto
+
+Cada página de proyecto lleva una ficha con tres datos: **Temporada** (solo estación y año, por ejemplo "Otoño 2026"), **Formato** y **El reto**. No se incluye quién participa: siempre son estudiantes de Hybridge Prepa.
+
 ## Agregar una publicación
 
 1. Guarda las imágenes en una carpeta nueva dentro de `assets/carruseles/`, numeradas `01.webp`, `02.webp`, etc.
